@@ -1,0 +1,22 @@
+.threads-container {
+    text-align: center;
+}
+.threads-list {
+    border: solid 2px black;
+    padding: 0 0.5em;
+    display: inline-block;
+    width: 20%;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+}
+.threads-title {
+    line-height: 1.5;
+    padding: 0.5em 0 0.5em 0em;
+    border-bottom: dashed 1px silver;
+    list-style-type: none!important;
+    text-align: left;
+}
+.threads-title:last-of-type {
+    border-bottom: none;
+  }
