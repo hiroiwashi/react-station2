@@ -12,9 +12,16 @@ export const Threads = () => {
     return (
         <div className='threads-container'>
             <h2>新着スレッド一覧</h2>
-            <ul className='threads-list'>
-                {threads.map((e)=><li key={e.id} className="threads-title">{e.title}</li>)}
-            </ul>
+            {
+                (threads.length) ? 
+                <ul className='threads-list'>
+                    {threads.map((e)=><li key={e.id} className="threads-title">{e.title}</li>)}
+                </ul>
+                :
+                <p>
+                    表示中...
+                </p>
+            }
         </div>
     )
 }
